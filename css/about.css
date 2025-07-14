@@ -1,0 +1,130 @@
+/* About Us Page */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* More gap */
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text, .about-image {
+    flex: 1;
+    min-width: 350px;
+}
+
+.about-text h3 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    max-width: 120%;
+    height: auto;
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 3px solid var(--primary-color);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin-top: 60px;
+}
+
+.about-image img:hover {
+    transform: scale(1.02);
+}
+
+.founder-section {
+    text-align: center;
+    background-color: var(--light-bg);
+    padding: 50px; 
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.founder-section img {
+    width: 180px; /* Larger image */
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border: 5px solid var(--primary-color);
+}
+
+.founder-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+}
+
+.founder-section p {
+    font-style: italic;
+    color: var(--gray-text);
+    font-size: 1.15rem;
+}
+
+.mission-vision-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.mvv-card {
+    background-color: var(--light-bg);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    border: 2px solid var(--border-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 320px;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.mvv-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+    border-color: var(--secondary-color);
+}
+
+.mvv-card h4 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.mvv-card ul {
+    margin-top: 15px;
+    text-align: left;
+}
+.mvv-card ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: var(--gray-text);
+}
+.mvv-card ul li i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.section-title {
+    margin-top: 40px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-text {
+    margin: 10px;
+    text-align: center;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: var(--light-bg);
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    padding-bottom: 20px;
+}

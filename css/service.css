@@ -1,0 +1,203 @@
+/* Services Highlight (Home Page) */
+.services-highlight .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px; /* More gap */
+    text-align: center;
+}
+
+.services-highlight .service-card {
+    background-color: var(--light-bg);
+    padding: 50px 30px; /* More padding */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    border: 2px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px; /* Ensure consistent height for all cards */
+}
+
+.services-highlight .service-card:hover {
+    transform: translateY(-15px); /* More pronounced lift */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    border-color: var(--primary-color);
+    background: linear-gradient(to bottom, var(--light-bg), #2a2a2a);
+}
+
+.services-highlight .service-card .icon {
+    font-size: 4.5rem; /* Larger icons */
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(0,255,0,0.5);
+}
+
+.services-highlight .service-card h3 {
+    font-size: 2.2rem; /* Larger heading */
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Services Full Page */
+.services-full .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.services-full .service-card {
+    background-color: var(--light-bg);
+    padding: 50px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    border: 2px solid var(--border-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Pushes button to bottom */
+    min-height: 400px; /* Ensure consistent height for all cards */
+}
+
+.services-full .service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    border-color: var(--primary-color);
+    background: linear-gradient(to bottom, var(--light-bg), #2a2a2a);
+}
+
+.services-full .service-card .icon {
+    font-size: 4.5rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(0,255,0,0.5);
+}
+
+.services-full .service-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+.services-full .service-card p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    flex-grow: 1; /* Allows paragraph to take available space */
+}
+.services-full .service-card .btn {
+    margin-top: auto; /* Pushes button to the bottom */
+}
+
+
+/* Plans / Pricing Page */
+.pricing-toggle {
+    text-align: center;
+    margin-bottom: 60px; /* More margin */
+    background-color: var(--light-bg);
+    display: inline-flex;
+    border-radius: 40px; /* More rounded */
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.pricing-toggle button {
+    background-color: transparent;
+    border: none;
+    padding: 15px 35px; /* More padding */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem; /* Larger font */
+    font-weight: 600;
+    color: var(--gray-text);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.pricing-toggle button.active {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    box-shadow: inset 0 0 15px rgba(0,255,0,0.4);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: stretch; /* Ensures all cards have the same height */
+}
+
+.plan-card {
+    background-color: var(--light-bg);
+    padding: 45px 35px; /* More padding */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    border: 2px solid var(--border-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan-card.popular {
+    background: linear-gradient(to bottom right, #333, var(--dark-bg));
+    border-color: var(--primary-color);
+    transform: translateY(-20px); 
+}
+
+.plan-card.popular .plan-header h3 {
+    color: var(--primary-color);
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+    border-color: var(--secondary-color);
+}
+
+.plan-header h3 {
+    font-size: 2.5rem; /* Larger heading */
+    margin-bottom: 10px;
+    color: var(--light-text);
+}
+
+.plan-price {
+    font-size: 4rem; /* Larger price */
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.plan-price span {
+    font-size: 1.3rem; /* Larger period text */
+    font-weight: 400;
+    color: var(--gray-text);
+}
+
+.plan-features ul {
+    margin-bottom: 35px; /* More margin */
+}
+
+.plan-features ul li {
+    font-size: 1.15rem; /* Larger feature text */
+    padding: 10px 0;
+    color: var(--gray-text);
+    border-bottom: 1px dashed rgba(255,255,255,0.1);
+}
+.plan-features ul li:last-child {
+    border-bottom: none;
+}
+
+.plan-features ul li i {
+    margin-right: 12px;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.plan-card .btn {
+    width: 100%;
+    margin-top: auto; /* Push button to the bottom */
+}
