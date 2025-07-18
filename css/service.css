@@ -144,7 +144,6 @@
 
 .plan-card.popular {
     background: linear-gradient(to bottom right, #333, var(--dark-bg));
-    border-color: var(--primary-color);
     transform: translateY(-20px); 
 }
 
