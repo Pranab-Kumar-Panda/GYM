@@ -167,6 +167,7 @@ section {
 .logo a {
     color: var(--primary-color);
     transition: color 0.3s ease;
+    font-family: cursive;
 }
 .logo a:hover {
     color: var(--light-text);
